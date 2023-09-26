@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector specifity - medal classification - silver</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .text { /* 0 0 1 0 */
+            color: lightblue;
+        }
+        .text .word { /* 0 0 2 0 */
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <p class="text">
+        Lorem, <span class="word">ipsum</span> dolor.
+    </p>
+</body>
+</html>
